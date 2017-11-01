@@ -43,6 +43,6 @@ def full?(board)
 
  def winner(board)
     if won?(board)
-      winner = board[WIN_COMBINATIONS[]]
+
     end
  end
