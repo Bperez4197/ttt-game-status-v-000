@@ -45,6 +45,5 @@ def full?(board)
    if won?(board) != nil
      return board[won?(board)[0]]
    else
-     nil
     end
  end
