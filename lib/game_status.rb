@@ -34,4 +34,3 @@ def full?(board)
  def draw?(board)
    WIN_COMBINATIONS.any? {|winner| winner == combo}
  end
-
