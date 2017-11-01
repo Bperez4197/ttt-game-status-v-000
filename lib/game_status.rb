@@ -27,7 +27,7 @@ def won?(board)
     combo += 1
   end
 end
-def full?(full_board)
-  if full_board.any? { |available| available == position_taken?(board, index) }
+def full?(board)
+  if board.all? { |full_board| full_board == position_taken?(board, index) }
 end
 end
