@@ -42,6 +42,7 @@ def full?(board)
    end
 
  def winner(board)
-    if won?(board) != nil
-      winner = board[won?(board)[0]]
+    if won?(board)
+      winner = board[won?(board)[O]]
+    end
  end
