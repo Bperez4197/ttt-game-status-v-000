@@ -34,3 +34,6 @@ def full?(board)
  def draw?(board)
    won?(board) == nil && full?(board) == true
  end
+ def over?(board)
+ draw?(board) || won?(board)
+   end
