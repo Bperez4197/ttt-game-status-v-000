@@ -29,6 +29,6 @@ def won?(board)
 end
 def full?(board)
   if board.all? { |full_board| full_board == "X" || "O" }
-  
+
 end
 end
