@@ -42,11 +42,7 @@ def full?(board)
    end
 
  def winner(board)
-   won?(board)
-   if board[won?(board)].include?("X")
-     "X"
-   else
-     "O"
+   if won?(board)
 
  end
  end
