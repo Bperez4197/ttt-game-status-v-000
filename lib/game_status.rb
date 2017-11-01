@@ -42,7 +42,11 @@ def full?(board)
    end
 
  def winner(board)
-    if won?(board)
-      winner = board[won?(board)[O]
-      end
+    winning_board = won?(board)
+    if winning_board == nil
+      return nil
+    elsif board[winning_board[O]].include?("X")
+      "X"
+    else board[winning_board[O]].include?("O")
+      "O"
  end
