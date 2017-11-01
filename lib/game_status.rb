@@ -30,3 +30,8 @@ end
 def full?(board)
  board.none? { |blank| blank == " " || blank.nil?}
  end
+
+ def draw?(board)
+   WIN_COMBINATIONS.any? {|winner| winner == combo}
+ end
+
