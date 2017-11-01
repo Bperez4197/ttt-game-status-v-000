@@ -45,8 +45,8 @@ def full?(board)
     winning_board = won?(board)
     if winning_board == nil
       return nil
-    elsif board[winning_board[O]].include?("X")
+    elsif board[winning_board[0]].include?("X")
       "X"
-    else board[winning_board[O]].include?("O")
+    else board[winning_board[0]].include?("O")
       "O"
  end
