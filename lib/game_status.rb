@@ -14,6 +14,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
 def won?(board)
   combo = 0
   while combo < WIN_COMBINATIONS.length
@@ -27,6 +28,7 @@ def won?(board)
     combo += 1
   end
 end
+
 def full?(board)
  board.none? { |blank| blank == " " || blank.nil?}
  end
@@ -34,6 +36,15 @@ def full?(board)
  def draw?(board)
    won?(board) == nil && full?(board) == true
  end
+ 
  def over?(board)
  draw?(board) || won?(board)
    end
+
+ def winner(board)
+    if won?(board) 
+      winner = board[won?(board)[O]]
+ end
+
+   
+   
