@@ -43,8 +43,7 @@ def full?(board)
 
  def winner(board)
    if won?(board) != nil
-     winning_board = won?(board)
-     return board[winning_board[0]]
+     return board[won?(board)[0]]
    else
      nil
     end
