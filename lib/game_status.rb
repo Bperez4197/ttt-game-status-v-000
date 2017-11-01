@@ -33,4 +33,3 @@ def full?(full_board)
   else
   end
 end
-end
