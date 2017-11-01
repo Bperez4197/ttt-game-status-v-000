@@ -29,7 +29,7 @@ def won?(board)
 end
 def full?(board)
  board.all? { |full_board| full_board == "X" || "O"}
- if board.each? do |full_board| full_board == " " || ""
-   return false
+  ! board.any? do |not_full_board| not_full_board == " " || ""
+   
  end
 end
