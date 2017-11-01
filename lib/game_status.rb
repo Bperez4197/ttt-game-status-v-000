@@ -32,5 +32,5 @@ def full?(board)
  end
 
  def draw?(board)
-   WIN_COMBINATIONS.any? {|winner| winner == combo}
+   board.any? {|winner| winner == WIN_COMBINATIONS}
  end
