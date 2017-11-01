@@ -30,7 +30,7 @@ end
 def full?(board)
   if board.all? do |full_board| full_board == "X" || "O"
     return true
-  else 
+  else
     end
   end
 end
