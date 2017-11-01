@@ -32,5 +32,5 @@ def full?(board)
  end
 
  def draw?(board)
-   board.any? {|winner| winner == WIN_COMBINATIONS}
+   won?(board) == nil && full?(board) == true
  end
