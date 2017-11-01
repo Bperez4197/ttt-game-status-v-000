@@ -28,8 +28,5 @@ def won?(board)
   end
 end
 def full?(full_board)
-  if board.any? do |available| available == " "
-    return false
-  else
-  end
+  if full_board.any? { |available| available != position_taken?(board, index) }
 end
