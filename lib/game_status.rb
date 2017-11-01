@@ -47,6 +47,6 @@ def full?(board)
      "X"
    else
      "O"
-      
+
  end
  end
