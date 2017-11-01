@@ -36,15 +36,12 @@ def full?(board)
  def draw?(board)
    won?(board) == nil && full?(board) == true
  end
- 
+
  def over?(board)
  draw?(board) || won?(board)
    end
 
  def winner(board)
-    if won?(board) 
+    if won?(board)
       winner = board[won?(board)[O]]
  end
-
-   
-   
